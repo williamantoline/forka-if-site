@@ -1,0 +1,226 @@
+/* html, body {
+    scroll-behavior: smooth;
+  } */
+.promotion {
+    margin-top: 88px;
+    padding: 0 120px;
+}
+.promotion .title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+.promotion .content {
+    margin-top: 72px;
+}
+.promotion .content .left {
+    margin-right: 24px;
+
+    font-size: 42px;
+    font-weight: 700;
+}
+.promotion .content .right .button-group button {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.promotion .timeline {
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.promotion .timeline .line {
+    top: calc(50% - 2px);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: black;
+    z-index: -1;
+}
+.promotion .timeline .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 280px;
+}
+.promotion .timeline .timeline-item .top {
+    height: 45%;
+    padding: 16px 0;
+}
+.promotion .timeline .timeline-item .center {
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.promotion .timeline .timeline-item .center img {
+    width: 12px;
+    height: 12px;
+}
+.promotion .timeline .timeline-item .bottom {
+    height: 45%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+}
+.bottom.even {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.bottom.odd {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.promotion .timeline .timeline-item .bottom .timeline-item-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.promotion .timeline .timeline-item .bottom .timeline-item-container .title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+.promotion .timeline .timeline-item .bottom .timeline-item-container .time {
+    font-size: 16px;
+    font-weight: 600;
+    color: #606060;
+}
+
+@media only screen and (max-width: 1024px) {
+    .promotion {
+        margin-top: 88px;
+        padding: 0 60px;
+    }
+    .promotion .content .left {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .promotion .timeline .timeline-item .bottom .timeline-item-container .title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .promotion .timeline .timeline-item .bottom .timeline-item-container .time {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .promotion .content .left {
+        font-size: 28px;
+    }
+    .promotion .content .right {
+        width: 50%;
+    }
+    .promotion .timeline .timeline-item .bottom {
+        width: 160%;
+    }
+    .promotion .timeline .timeline-item .bottom .timeline-item-container .title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .promotion .timeline .timeline-item .bottom .timeline-item-container .time {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .promotion .content {
+        flex-direction: column;
+    }
+    .promotion .content .left {
+        width: 100%;
+    }
+    .promotion .content .right {
+        width: 100%;
+    }
+
+
+    .promotion .timeline {
+        position: relative;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    .promotion .timeline .line {
+        position: absolute;
+        top: 0;
+        left: 3px;
+        width: 3px;
+        height: 100%;
+        border-radius: 1.5px;
+    }
+    .promotion .timeline .timeline-item {
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .promotion .timeline .timeline-item .top {
+        display: none;
+    }
+    .promotion .timeline .timeline-item .center {
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        order: 1;
+    }
+    .promotion .timeline .timeline-item .center img {
+        width: 10px;
+        height: 10px;
+    }
+    .promotion .timeline .timeline-item .bottom {
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        order: 2;
+    }
+    .bottom.even {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .bottom.odd {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .promotion .timeline .timeline-item .bottom .timeline-item-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .promotion .timeline .timeline-item .bottom .timeline-item-container .title {
+        font-size: 18px;
+        line-height: 1.25;
+        margin-bottom: 6px;
+        text-align: left;
+    }
+    .promotion .timeline .timeline-item .bottom .timeline-item-container .time {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .promotion {
+        margin-top: 88px;
+        padding: 0 16px;
+    }
+    .promotion .content .left {
+        font-size: 28px;
+        font-weight: 700;
+    }
+}

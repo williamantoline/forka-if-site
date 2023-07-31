@@ -1,0 +1,157 @@
+.facility .content {
+    position: relative;
+    margin-top: 64px;
+}
+.facility .content .line {
+    position: absolute;
+    width: 4px;
+    height: calc(100% + 36px + 12px);
+    left: calc(50% - 2px);
+    background-color: black;
+    z-index: -1;
+    border-radius: 2px;
+}
+.facility .content .facility-item {
+    padding: 0 120px;
+    margin-bottom: 96px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.facility .content .facility-item .left {
+    width: 44%;
+
+}
+.facility .content .facility-item .left .facility-img {
+    width: 80%;
+    max-height: 300px;
+
+    display: flex;
+    flex-direction: row;
+}
+.facility .content .facility-item .left .facility-img img {
+    box-shadow: 4px 4px 16px 2px rgba(0, 0, 0, 0.27);
+
+    &:hover {
+        scale: 1.1;
+        transition: ease-in-out 50ms;
+        z-index: 10;
+    }
+}
+.facility .content .facility-item .left .facility-img .img1 {
+    max-height: 100%;
+    max-width: 100%;
+}
+.facility .content .facility-item .left .facility-img .img2 {
+    position: relative;
+    top: 20%;
+    left: -30%;
+    max-height: 55%;
+    max-width: 55%;
+}
+
+.facility .content .facility-item .center {
+    width: 12%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.facility .content .facility-item .right {
+    width: 44%;
+}
+.facility .content .facility-item .right .facility-description .title {
+    font-size: 32px;
+    font-weight: 600;
+}
+.facility .content .facility-item .right .facility-description .desc {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .facility .content .line {
+        width: 2.5px;
+        left: calc(50% - 1.25px);
+        border-radius: 1.25px;
+    }
+    .facility .content .facility-item {
+        padding: 0 60px;
+        margin-bottom: 72px;
+    }
+    .facility .content .facility-item .right .facility-description .title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .facility .content .facility-item .right .facility-description .desc {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 8px;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .facility .content .facility-item {
+        padding: 0 48px;
+        margin-bottom: 56px;
+    }
+    .facility .content .facility-item .center img {
+        width: 10px;
+        height: 10px;
+    }
+    .facility .content .facility-item .right .facility-description .title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .facility .content .facility-item .right .facility-description .desc {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 8px;
+        line-height: 1.3;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .facility .content .line {
+        position: absolute;
+        width: 4px;
+        height: calc(100%);
+        left: 24px;
+        background-color: black;
+        z-index: -1;
+        border-radius: 2px;
+    }
+    .facility .content .facility-item {
+        padding: 0 calc(24px - 2px);
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+    .facility .content .facility-item .left {
+        order: 2;
+        width: 42%;
+    }
+    .facility .content .facility-item .right {
+        width: 42%;
+        order: 3;
+    }
+    .facility .content .facility-item .center {
+        width: 8px;
+        height: 8px;
+    }
+    .facility .content .facility-item .right .facility-description .title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .facility .content .facility-item .right .facility-description .desc {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 8px;
+        line-height: 1.3;
+    }
+}

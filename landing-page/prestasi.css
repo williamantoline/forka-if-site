@@ -1,0 +1,106 @@
+.achievement .content {
+    margin-top: 48px;
+    width: 100%;
+    padding: 0 120px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.achievement .content .achievement-section {
+    width: 24%;
+}
+.achievement .content .achievement-section .achievement-item {
+    padding: 16px 24px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: white;
+
+    --border-size: 4px;
+    --border-angle: 0turn;
+
+    &:hover {
+        scale: 1.03;
+        transition: ease-out 100ms;
+    }
+}
+  
+.achievement-item:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.achievement .content .achievement-section .navigation {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    padding: 24px 16px;
+}
+.achievement .content .achievement-section .achievement-item h4 {
+    margin-bottom: 4px;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+.achievement .content .achievement-section .achievement-item .comp-name {
+    margin-bottom: 6px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.achievement .content .achievement-section .achievement-item .comp-organizer {
+    margin-bottom: 16px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+.achievement .content .achievement-section .achievement-item .comp-date {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8B8B8B;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .achievement .content {
+        padding: 0 60px;
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    .achievement .content {
+        padding: 0 48px;
+    }
+    .achievement .content .achievement-section {
+        width: 32%;
+    }
+    .achievement .content .achievement-section-1 {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .achievement .content .achievement-section {
+        width: 48%;
+    }
+    .achievement .content .achievement-section-2 {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .achievement .content .achievement-section {
+        width: 100%;
+    }
+    .achievement .content .achievement-section-3 {
+        display: none;
+    }
+    .achievement .content .achievement-section .navigation {
+        font-size: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,55 @@
+.link-button {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button.btn-primary {
+    border: 1.5px solid white;
+    padding: 8px 20px;
+    background: none;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+button.btn-secondary {
+    padding: 12px 20px;
+    border-radius: 6px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    background-color: #EEA12F; 
+
+    &:disabled {
+        background-color: rgb(207, 142, 45) !important; 
+        cursor: default;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+button.btn-trail-ne::after {
+    margin-left: 8px;
+    content: url(../../landing-page/assets/north-east.svg);
+}
+
+button.btn-trail-se::after {
+    margin-left: 8px;
+    content: url(../../landing-page/assets/south-east.svg);
+}

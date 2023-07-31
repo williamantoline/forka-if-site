@@ -1,0 +1,39 @@
+.cooperation {
+    margin-top: 198px;
+
+    padding: 24px 0;
+
+    background-color: white;
+}
+
+.cooperation p {
+    margin-bottom: 24px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    text-align: center;
+}
+.cooperation .wrapper {
+    width: 100%;
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.cooperation .wrapper::-webkit-scrollbar {
+    display: none;
+}
+.common-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.cooperation .cooperation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.cooperation .cooperation-list {
+    padding: 0 8px;
+}

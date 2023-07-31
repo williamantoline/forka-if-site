@@ -1,0 +1,44 @@
+.whyus {
+    margin-top: 48px;
+}
+.whyus h1 {
+    font-size: 72px;
+    font-weight: 800;
+
+    text-align: center;
+}
+.whyus p {
+    margin-top: 36px;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .whyus h1 {
+        font-size: 64px;
+    }
+    .whyus p {
+        margin-top: 32px;
+    
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .whyus h1 {
+        font-size: 48px;
+    }
+    .whyus p {
+        margin-top: 24px;
+    
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    
+}

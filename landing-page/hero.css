@@ -1,0 +1,178 @@
+.hero .left {
+    width: 34%;
+    height: calc(100vh - 60px);
+    background-image: url('assets/hero.png');
+    background-size: cover;
+    padding: 0 40px 0 80px;
+}
+.hero .left h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: white;
+}
+
+.hero .right {
+    width: 66%;
+    height: calc(100vh - 60px);
+    background-color: purple;
+}
+.hero .right .title {
+    height: 72px;
+    background-color: black;
+
+    padding: 0 32px;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.hero .right .content {
+    height: calc(100vh - 60px - 72px - 140px);
+}
+.hero .right .content img {
+    object-fit: cover;
+}
+.hero .right .footer {
+    margin: 0;
+    padding: 16px 32px;
+    height: 140px;
+
+    background-color: black;
+    color: white;
+}
+.hero .right .footer .banner-title {
+    font-size: 20px;
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hero .right .footer .banner-description {
+    margin-top: 8px;
+    font-size: 14px;
+    height: 56px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hero .right .footer a {
+    color: wheat;
+    position: relative;
+}
+
+.button-group {
+    margin-top: 48px;
+}
+.signup-btn {
+    margin-bottom: 16px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .hero .left {
+        padding: 0 20px 0 40px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .left {
+        width: 100%;
+        padding: 0 16px 0 16px;
+    }
+    .hero .left h2 {
+        font-size: 32px;
+    }
+
+    .hero .right {
+        height: 100%;
+        width: 100%;
+    }
+    .hero .right .title {
+        height: 48px;
+    
+        padding: 0 16px;
+    
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .hero .right .footer {
+        padding: 16px 16px;
+        height: 128px;
+    }
+    .hero .right .footer .banner-title {
+        font-size: 16px;
+        height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .hero .right .footer .banner-description {
+        margin-top: 8px;
+        font-size: 12px;
+        height: 48px;
+    
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .hero .right .footer a {
+        color: wheat;
+        position: relative;
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .left {
+        width: 100%;
+        padding: 0 16px 0 16px;
+    }
+    .hero .left h2 {
+        font-size: 32px;
+    }
+
+    .hero .right {
+        width: 100%;
+    }
+    .hero .right .title {
+        height: 48px;
+    
+        padding: 0 16px;
+    
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .hero .right .footer {
+        padding: 16px 16px;
+        height: 128px;
+    }
+    .hero .right .footer .banner-title {
+        font-size: 16px;
+        height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .hero .right .footer .banner-description {
+        margin-top: 8px;
+        font-size: 12px;
+        height: 48px;
+    
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .hero .right .footer a {
+        color: wheat;
+        position: relative;
+        font-size: 14px;
+    }
+}

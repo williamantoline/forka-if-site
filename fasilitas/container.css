@@ -1,0 +1,164 @@
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+.container .facility-item {
+    width: 100%;
+
+    margin-bottom: 96px;
+}
+.container .facility-item .left {
+    padding-left: 120px;
+    width: 50%;
+
+    margin-right: 24px;
+}
+.container .facility-item .left h4 {
+    margin-bottom: 20px;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+.container .facility-item .left p {
+    margin-bottom: 16px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.container .facility-item .right {
+    width: 50%;
+}
+
+.right .content {
+    width: 100%;
+}
+.right .content .img-wrapper {
+    width: 100%;
+    overflow: scroll;
+}
+.right .content .img-container {
+    display: flex;
+    flex-direction: row;
+
+    height: 280px;
+}
+.right .content .img-container div {
+    width: 420px;
+    height: 280px;
+    margin-right: 24px;
+}
+.right .content .img-container div img {
+    width: 420px;
+    height: 280px;
+}
+
+.right .content .info {
+    margin-right: 120px;
+    margin-top: 24px;
+    padding: 16px 0;
+
+    display: flex;
+    flex-direction: row;
+
+    background: rgba(255, 255, 255, 0.4);
+}
+.right .content .info .info-item {
+    width: 33%;
+
+    padding: 0 24px;
+}
+.right .content .info .info-item .label {
+    font-size: 16px;
+    font-weight: 600;
+}
+.right .content .info .info-item .value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.right .content .info .info-item-divider {
+    width: 1.5;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .container .facility-item .left {
+        padding-left: 60px;    
+    }
+    
+    .right .content .info {
+        margin-right: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .container .facility-item {
+        margin-bottom: 56px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .facility-item .left {
+        width: 100%;
+        padding-left: 16px;
+    }
+
+    .container .facility-item .right {
+        width: 100%;
+    }
+
+    .container .facility-item .left h4 {
+        margin-bottom: 12px;
+    
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .container .facility-item .left p {
+        margin-bottom: 8px;
+    
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    .right {
+        margin-top: 16px;
+    }
+    .right .content .img-wrapper {
+        margin-left: 16px;
+        width: 100%;
+        overflow: scroll;
+    }
+    .right .content .img-container {
+        height: 188px;
+
+        display: flex;
+        flex-direction: row;    
+    }
+    .right .content .img-container div {
+        width: 272px;
+        height: 188px;
+    }
+    .right .content .img-container div img {
+        width: 272px;
+        height: 188px;
+    }
+    .right .content .info {
+        margin: 16px 16px 0 16px;
+    }
+    .right .content .info .info-item .label {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .right .content .info .info-item .value {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}

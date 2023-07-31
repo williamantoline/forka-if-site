@@ -1,0 +1,34 @@
+/* flex */
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-sb {
+    justify-content: space-between;
+}
+
+
+/* sizing */
+.wfull {
+    width: 100%;
+}
+.whalf {
+    width: 50%;
+}
+.hfull {
+    height: 100%;
+}

@@ -1,0 +1,136 @@
+.alumni .content {
+    width: 100%;
+    margin-top: 48px;
+}
+
+.alumni .content .wrapper {
+    width: 100%;
+    overflow: scroll;
+}
+.alumni .content .wrapper .profession-group .profession-item {
+    padding: 8px 32px;
+    margin: 0 8px;
+
+    min-width: fit-content;
+    border: 2px solid black;
+    border-radius: 24px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.alumni .scroller {
+    height: 420px;
+    width: 100%;
+    padding: 0 120px;
+    margin-top: 48px;
+}
+.alumni .scroller .scroller-item {
+    width: 32%;
+    height: 420px;
+    overflow-y: scroll;
+}
+.alumni .scroller .scroller-item .review-container {
+    align-content: center;
+    justify-content: center;
+}
+.alumni .scroller .scroller-item .review-container .review-item {
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 24px 16px 14px 16px;
+}
+.alumni .scroller .scroller-item .review-container .review-item hr {
+    margin-bottom: 12px;
+}
+.alumni .scroller .scroller-item .review-container .review-item .review-item-body {
+    margin-bottom: 16px;
+   
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.alumni .scroller .scroller-item .review-container .review-item .review-item-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.review-item-footer .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    margin-right: 12px;
+}
+.review-item-footer .bio .name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.review-item-footer .bio .occupation {
+    font-size: 14px;
+    font-weight: 600;
+    color: #616161;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .alumni .scroller {
+        padding: 0 60px;
+    }
+    .alumni .scroller .scroller-item .review-container .review-item .review-item-body {
+        font-size: 14px;
+    }
+    .review-item-footer .profile {
+        width: 42px;
+        height: 42px;
+    }
+    .review-item-footer .bio .name {
+        font-size: 14px;
+    }
+    .review-item-footer .bio .occupation {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 820px) {
+    .alumni .scroller {
+        padding: 0 40px;
+    }
+    .alumni .scroller .scroller-item .review-container .review-item .review-item-body {
+        font-size: 13px;
+    }
+    .review-item-footer .profile {
+        width: 36px;
+        height: 36px;
+    }
+    .review-item-footer .bio .name {
+        font-size: 13px;
+    }
+    .review-item-footer .bio .occupation {
+        font-size: 11px;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .alumni .scroller .center {
+        display: none;
+    }
+    .alumni .scroller .scroller-item {
+        width: 48%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .alumni .scroller .right {
+        display: none;
+    }
+    .alumni .scroller .scroller-item {
+        width: 100%;
+    }
+}
