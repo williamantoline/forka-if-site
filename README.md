@@ -2,7 +2,7 @@
 
 Student Admission Website for IF Major on Forka University
 
-Using HTML, CSS and Javascript\
+Using HTML, CSS and Javascript
 
 ## Forkafest Web Development Competition
 
