@@ -2,8 +2,6 @@
 
 Student Admission Website for IF Major on Forka University
 
-Using HTML, CSS and Javascript
-
 ## Forkafest Web Development Competition
 
 This website was attended Forkafest Web Development Competition and made it to final (Top 5)
@@ -11,7 +9,8 @@ This website was attended Forkafest Web Development Competition and made it to f
 ## Additional Information
 
 Designed in 6 days\
-Developed in 4 days
+Developed in 4 days\
+Using HTML, CSS and Javascript
 
 ## Credits
 
